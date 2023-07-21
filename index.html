@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Get Started</h1>
+            <p>Enter your credentials to access your account
+
+            </p>
+            
+                <label for="name">Name</label>
+                <br>
+                <input id="name" name="name" type="text">
+                <p class="nameError"></p>
+            
+                <label for="email">Email</label>
+                <br>
+                <input id="email" name="email" type="text">
+                <p class="emailError"></p>
+
+                <label for="password">Password</label>
+                <br>
+                <input id="password"name="password" type="password">
+                <p class="passwordError"></p>
+          
+                <div>
+                <p>I agree to the Term & Privacy</p>
+        <input type="checkbox" name="agree-btn" id="agree-btn" required> 
+        <br>
+        <br>
+    </div>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+</body>
+</html>

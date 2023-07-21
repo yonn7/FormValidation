@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 12px;
+    width: 400px;
+    background-color: white;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.button {
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+    width: 250px;
+    height: 25px;
+}
+
