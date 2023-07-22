@@ -1,28 +1,59 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: solid;
-    border-radius: 12px;
-    width: 400px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 12px;
+  width: 400px;
+  background-color: white;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  font-family: 'Nunito';
 }
 
 .button {
-    background-color: blue;
-    border-radius: 8px;
-    color: white;
-    width: 250px;
-    height: 25px;
+  background-color: #4253f0;
+  border-radius: 8px;
+  color: white;
+  width: 300px;
+  height: 25px;
+}
+button {
+  border-radius: 8px;
+  width: 170px;
+  height: 25px;
+}
+input {
+  border-radius: 10px;
+  width: 300px;
 }
 
+.sub {
+  font-size: 15px;
+  font-weight: normal;
+}
+.nameError,
+.checkError,
+.passwordError,
+.emailError {
+  color: red;
+  font-weight: bold;
+}
+
+.divText {
+  display: flex;
+  justify-content: center;
+}
+
+.sepText {
+  color: lightgray;
+  font-size: 15px;
+}
