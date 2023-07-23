@@ -3,28 +3,28 @@ const MIN_PASSWORD_LENGTH = 5;
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  printValues();
-});
-
-const printValues = () => {
   const namesValue = document.getElementById('name').value.trim();
   const emailValue = document.getElementById('email').value.trim();
   const passwordValue = document.getElementById('password').value.trim();
 
   if (validateInputs()) {
-    alert(
-      `Name: ${namesValue} ${'\n'}Email: ${emailValue} ${'\n'}Password: ${passwordValue}`
-    );
+    printValues(namesValue, emailValue, passwordValue);
     form.submit();
   }
+});
+
+const printValues = (namesValue, emailValue, passwordValue) => {
+  alert(
+    `Name: ${namesValue} ${'\n'}Email: ${emailValue} ${'\n'}Password: ${passwordValue}`
+  );
 };
 
 const setErrormessage = (fieldName, errorMessage) => {
-  document.querySelector(fieldName).innerText = errorMessage;
+  document.getElementById(fieldName).innerText = errorMessage;
 };
 
 const clearErrorMessage = (errorName) => {
-  document.querySelector(errorName).innerText = '';
+  document.getElementById(errorName).innerText = '';
 };
 
 const validateNameField = () => {
@@ -33,10 +33,10 @@ const validateNameField = () => {
   const namesValue = document.getElementById('name').value.trim();
 
   if (namesValue === '') {
-    setErrormessage('.nameError', 'Name is Required');
+    setErrormessage('nameError', 'Name is Required');
     result = false;
   } else {
-    clearErrorMessage('.nameError');
+    clearErrorMessage('nameError');
     result = true;
   }
   return result;
@@ -51,13 +51,13 @@ const validateEmail = () => {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (emailValue === '') {
-    setErrormessage('.emailError', 'Email is Required');
+    setErrormessage('emailError', 'Email is Required');
     result = false;
   } else if (!re.test(String(emailValue).toLowerCase())) {
-    setErrormessage('.emailError', 'Please provide a proper email');
+    setErrormessage('emailError', 'Please provide a proper email');
     result = false;
   } else {
-    clearErrorMessage('.emailError');
+    clearErrorMessage('emailError');
     result = true;
   }
   return result;
@@ -69,13 +69,13 @@ const validatePassword = () => {
   const passwordValue = document.getElementById('password').value.trim();
 
   if (passwordValue === '') {
-    setErrormessage('.passwordError', 'Password is Required');
+    setErrormessage('passwordError', 'Password is Required');
     result = false;
   } else if (passwordValue.length < MIN_PASSWORD_LENGTH) {
-    setErrormessage('.passwordError', 'Password Must be at least 5 characters');
+    setErrormessage('passwordError', 'Password Must be at least 5 characters');
     result = false;
   } else {
-    clearErrorMessage('.passwordError');
+    clearErrorMessage('passwordError');
     result = true;
   }
   return result;
@@ -85,10 +85,10 @@ const validateCheckbox = () => {
   let result = true;
 
   if (!this.form.checkbox.checked) {
-    setErrormessage('.checkError', 'Need to agree to Terms & Privacy');
+    setErrormessage('checkError', 'Need to agree to Terms & Privacy');
     result = false;
   } else {
-    clearErrorMessage('.checkError');
+    clearErrorMessage('checkError');
     result = true;
   }
   return result;

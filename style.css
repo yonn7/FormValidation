@@ -40,10 +40,10 @@ input {
   font-size: 15px;
   font-weight: normal;
 }
-.nameError,
-.checkError,
-.passwordError,
-.emailError {
+#nameError,
+#checkError,
+#passwordError,
+#emailError {
   color: red;
   font-weight: bold;
 }
