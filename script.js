@@ -2,18 +2,21 @@ const form = document.getElementById('form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  printValues();
+});
+
+const printValues = () => {
   const namesValue = document.getElementById('name').value.trim();
   const emailValue = document.getElementById('email').value.trim();
   const passwordValue = document.getElementById('password').value.trim();
 
-  // validateInputs();
   if (validateInputs()) {
     alert(
       `Name: ${namesValue} ${'\n'}Email: ${emailValue} ${'\n'}Password: ${passwordValue}`
     );
     form.submit();
   }
-});
+};
 
 const setErrormessage = (fieldName, errorMessage) => {
   document.querySelector(fieldName).innerText = errorMessage;
