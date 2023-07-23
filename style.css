@@ -9,7 +9,7 @@
   max-width: 28rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding-bottom: 5em;
+  padding-bottom: 2.5em;
 }
 body {
   display: flex;
@@ -26,6 +26,7 @@ body {
   color: white;
   width: 100%;
   min-height: auto;
+  padding: 0.8em;
 }
 button {
   border-radius: 0.5rem;
