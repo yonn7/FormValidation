@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const MIN_PASSWORD_LENGTH = 5;
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -27,6 +28,8 @@ const clearErrorMessage = (errorName) => {
 };
 
 const validateNameField = () => {
+  let result = true;
+
   const namesValue = document.getElementById('name').value.trim();
 
   if (namesValue === '') {
@@ -40,6 +43,8 @@ const validateNameField = () => {
 };
 
 const validateEmail = () => {
+  let result = true;
+
   const emailValue = document.getElementById('email').value.trim();
 
   const re =
@@ -59,12 +64,14 @@ const validateEmail = () => {
 };
 
 const validatePassword = () => {
+  let result = true;
+
   const passwordValue = document.getElementById('password').value.trim();
 
   if (passwordValue === '') {
     setErrormessage('.passwordError', 'Password is Required');
     result = false;
-  } else if (passwordValue.length < 5) {
+  } else if (passwordValue.length < MIN_PASSWORD_LENGTH) {
     setErrormessage('.passwordError', 'Password Must be at least 5 characters');
     result = false;
   } else {
@@ -75,6 +82,8 @@ const validatePassword = () => {
 };
 
 const validateCheckbox = () => {
+  let result = true;
+
   if (!this.form.checkbox.checked) {
     setErrormessage('.checkError', 'Need to agree to Terms & Privacy');
     result = false;
