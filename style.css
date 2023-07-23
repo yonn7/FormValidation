@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: solid;
   border-radius: 12px;
-  width: 400px;
+  width: 30%;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 body {
   display: flex;
@@ -15,29 +15,32 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: #f7f7f7;
   font-family: 'Nunito';
 }
 
 .button {
   background-color: #4253f0;
-  border-radius: 8px;
   color: white;
-  width: 300px;
-  height: 25px;
+  width: 100%;
+  min-height: auto;
 }
 button {
   border-radius: 8px;
-  width: 170px;
-  height: 25px;
+  width: 48%;
+  min-height: auto;
 }
-input {
+#password,
+#email,
+#name {
   border-radius: 10px;
-  width: 300px;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5em;
 }
 
 .sub {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: normal;
 }
 #nameError,
@@ -46,6 +49,7 @@ input {
 #emailError {
   color: red;
   font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .divText {
@@ -55,10 +59,15 @@ input {
 
 .sepText {
   color: lightgray;
-  font-size: 15px;
+  font-size: 0.94re;
 }
 
-label span {
-  display: block;
-  overflow: auto;
+#googl {
+  width: 0.87rem;
+  height: 0.94rem;
+}
+
+#applebtn {
+  width: 1.3rem;
+  height: 0.94em;
 }

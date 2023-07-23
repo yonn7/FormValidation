@@ -4,10 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Started</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100"
-      rel="stylesheet"
-    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Nunito"
       rel="stylesheet"
@@ -18,33 +15,31 @@
   <body>
     <div class="container">
       <form id="form" action="/">
-        <h1>
-          Get Started Now <br />
+        <h1>Get Started Now</h1>
+        <h2>
           <span class="sub">Enter your credentials to access your account</span>
-        </h1>
+        </h2>
 
         <button type="button">
-          <img src="google.png" width="14px" height="15px" alt="buttonpng" />
+          <img id="googl" src="google.png" alt="buttonpng" />
           Log in with Google
         </button>
 
         <button type="button">
-          <img src="apples.png" width="20px" height="15px" alt="buttonpng" />
+          <img src="apples.png" id="applebtn" alt="buttonpng" />
           Log in with Apple
         </button>
 
-        <br />
-        <br />
         <div class="divText">
           <p class="sepText">or</p>
         </div>
         <label for="name">Name</label>
-        <br />
+
         <input id="name" name="name" placeholder="Rqfiqur Rahman" type="text" />
         <p id="nameError"></p>
 
         <label for="email">Email</label>
-        <br />
+
         <input
           id="email"
           name="email"
@@ -54,7 +49,7 @@
         <p id="emailError"></p>
 
         <label for="password">Password</label>
-        <br />
+
         <input
           id="password"
           name="password"
@@ -63,13 +58,11 @@
         />
         <p id="passwordError"></p>
 
-        <label>
+        <div>
           <input type="checkbox" name="checkbox" id="checkbox" />
-          <span> I agree to the Term & Privacy</span>
+          <label for="checkbox"> I agree to the Term & Privacy</label>
           <p id="checkError"></p>
-          <br />
-          <br />
-        </label>
+        </div>
 
         <button type="submit" class="button">Login</button>
       </form>
