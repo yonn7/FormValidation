@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   width: 30%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -26,14 +26,15 @@ body {
   min-height: auto;
 }
 button {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 48%;
   min-height: auto;
 }
 #password,
 #email,
 #name {
-  border-radius: 10px;
+  border-radius: 0.5rem;
+
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.5em;
