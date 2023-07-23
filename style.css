@@ -6,8 +6,10 @@
   align-items: center;
   border-radius: 0.5rem;
   width: 30%;
+  max-width: 28rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding-bottom: 5em;
 }
 body {
   display: flex;
