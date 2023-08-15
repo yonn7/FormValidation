@@ -171,6 +171,7 @@ nav ul li i {
   min-height: auto;
   padding: 0.8em;
   border-radius: 12px;
+  margin-left: 20px;
 }
 
 .sidenav {
@@ -198,7 +199,7 @@ nav ul li i {
   margin-left: 15rem;
   height: 100%;
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 60px;
 }
 #logo {
   width: 10%;
