@@ -8,7 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #cedaec;
+  background-color: #f0f0f0;
 }
 
 /* .firstNav {
@@ -48,20 +48,16 @@ nav ul li i {
   /* justify-content: space-evenly; */
   border-radius: 20px;
   width: 100%;
-  height: 100%;
 }
 
 .container1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  padding: 1rem;
   justify-content: center;
   border: 1px solid lightgrey;
   border-radius: 20px;
-
-  width: 100%;
-  height: 15%;
 }
 #profile-image {
   align-self: center;
@@ -73,8 +69,9 @@ nav ul li i {
   /* border-style: solid; */
   padding: 1.5rem;
   width: 100%;
-  height: 100%;
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 #box {
@@ -91,12 +88,11 @@ nav ul li i {
 
 .accountSettings {
   border: 1px solid lightgrey;
-  border-radius: 20px;
-
-  width: 100%;
+  border-radius: 1rem;
   height: 100%;
   display: flex;
   padding-left: 10px;
+  background: #f6f6f6;
 }
 
 .accountSettings ul li {
@@ -110,9 +106,7 @@ nav ul li i {
   border: 1px solid lightgrey;
   border-radius: 20px;
   flex-wrap: wrap;
-  width: 100%;
-  height: 37%;
-  padding: 10px;
+  padding: 1em;
 }
 
 .personalInfo {
@@ -127,7 +121,6 @@ nav ul li i {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 25%;
 }
 
 .proinfo {
@@ -143,14 +136,13 @@ nav ul li i {
 .container3 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  /* align-items: flex-start; */
+
+  justify-content: space-around;
   border: 1px solid lightgrey;
   border-radius: 20px;
   flex-wrap: wrap;
-  width: 100%;
-  height: 40%;
-  padding: 10px;
+  padding: 1em;
 }
 
 .addinfo {
@@ -160,7 +152,6 @@ nav ul li i {
   flex-wrap: wrap;
   /* border-style: solid; */
   width: 100%;
-  height: 35%;
 }
 
 #btn {
@@ -190,16 +181,12 @@ nav ul li i {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #cedaec;
 }
 .mainContent {
   display: flex;
   flex-direction: column;
   width: calc(100% - 16rem);
-  margin-left: 15rem;
-  height: 100%;
-  background-color: #f6f6f6;
-  border-radius: 60px;
+  margin: 1rem 0 2rem 15rem;
 }
 #logo {
   width: 10%;
