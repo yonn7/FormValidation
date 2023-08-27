@@ -147,13 +147,16 @@ nav ul li i {
 
 .addinfo {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   flex-wrap: wrap;
   /* border-style: solid; */
   width: 100%;
+  gap: 1em;
 }
-
+.addressInfo {
+  flex: 1 1 45%;
+}
 #btn {
   background-color: #4253f0;
   color: white;
